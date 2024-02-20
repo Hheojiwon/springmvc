@@ -24,5 +24,10 @@ public class OrderServiceImpl implements  OrderService{ //기능 실행하는 �
         //최종적으로 할인된 가격을 받음
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
 
